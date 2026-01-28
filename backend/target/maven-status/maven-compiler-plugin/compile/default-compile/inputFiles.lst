@@ -4,7 +4,9 @@ C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\c
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\controller\UserController.java
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\exception\ApiError.java
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\security\JwtAuthenticationFilter.java
+C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\entity\Role.java
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\service\AuthService.java
+C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\entity\User.java
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\security\SecurityConfig.java
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\controller\AuthController.java
 C:\Users\shubh\OneDrive\Desktop\team-sales-dashboard\backend\src\main\java\com\company\teamsales\entity\SalesRecord.java
