@@ -12,51 +12,43 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString(exclude = {"remarks"})   // optional: exclude large text from toString
 public class SalesRecord {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "policy_number", unique = true, nullable = false, length = 50)
+    @Column(name = "policy_number", unique = true, nullable = false)
     private String policyNumber;
 
-    @Column(name = "customer_name", nullable = false, length = 100)
+    @Column(name = "customer_name", nullable = false)
     private String customerName;
 
-    @Column(name = "scrutiny_number", length = 50)
     private String scrutinyNumber;
 
-    @Column(name = "net_premium", precision = 15, scale = 2)
+    @Column(precision = 15, scale = 2)
     private BigDecimal netPremium;
 
-    @Column(name = "gross_premium", precision = 15, scale = 2)
+    @Column(precision = 15, scale = 2)
     private BigDecimal grossPremium;
 
     @Column(columnDefinition = "TEXT")
     private String remarks;
 
-    @Column(name = "lob", length = 100)
     private String lob;
 
-    @Column(name = "employee_id", nullable = false, length = 50)
+    @Column(name = "employee_id", nullable = false)
     private String employeeId;
 
-    @Column(name = "employee_name", length = 100)
     private String employeeName;
 
-    @Column(name = "tl_name", length = 100)
     private String tlName;
 
-    @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
-
-    @Column(name = "updated_at")
     private LocalDateTime updatedAt = LocalDateTime.now();
 
     @PreUpdate
-    protected void onUpdate() {
+    public void preUpdate() {
         updatedAt = LocalDateTime.now();
     }
 }

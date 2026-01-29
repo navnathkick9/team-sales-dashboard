@@ -1,13 +1,8 @@
 com\company\teamsales\entity\SalesRecord$SalesRecordBuilder.class
 com\company\teamsales\entity\SalesRecord.class
-com\company\teamsales\service\SalesService.class
 com\company\teamsales\entity\User$UserBuilder.class
-com\company\teamsales\security\SecurityConfig.class
 com\company\teamsales\entity\User.class
-com\company\teamsales\TeamSalesApplication.class
 com\company\teamsales\entity\Role.class
-com\company\teamsales\security\JwtUtil.class
 com\company\teamsales\service\SalesService$1.class
-com\company\teamsales\repository\UserRepository.class
 com\company\teamsales\repository\SalesRepository.class
-com\company\teamsales\security\JwtAuthenticationFilter.class
+com\company\teamsales\security\JwtFilter.class

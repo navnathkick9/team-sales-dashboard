@@ -29,16 +29,14 @@ public class User implements UserDetails {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Role role;   // ADMIN, TL, AGENT
+    private Role role;
 
     @Column(name = "employee_id", unique = true)
     private String employeeId;
 
     private String employeeName;
 
-    private String tlName;  // For agents: their TL's name; for TL: their own name
-
-    // ... other fields
+    private String tlName;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -46,9 +44,21 @@ public class User implements UserDetails {
     }
 
     @Override
-    public String getUsername() { return username; }
-    @Override public boolean isAccountNonExpired() { return true; }
-    @Override public boolean isAccountNonLocked() { return true; }
-    @Override public boolean isCredentialsNonExpired() { return true; }
-    @Override public boolean isEnabled() { return true; }
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() { return true; }
+    @Override
+    public boolean isAccountNonLocked() { return true; }
+    @Override
+    public boolean isCredentialsNonExpired() { return true; }
+    @Override
+    public boolean isEnabled() { return true; }
 }
